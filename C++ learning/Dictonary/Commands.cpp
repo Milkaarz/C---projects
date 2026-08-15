@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // Defined two custom namespaces to prevent name collisions
 namespace first {
@@ -34,29 +35,34 @@ int main() {
     students /= 2; // 40 / 2 = 20
     students %= 2; // Remainder of 20 / 2 = 0
 
+    // Fixed line 34 syntax error:
     std::cout << "Final students count = " << students << std::endl; // Prints 0
 
 
-    //type conversion = conversion a value of one data type to another
-    // implicit = automatic
-    // explicit = precede a value with a new data type
+    // --- SECTION 3: TYPE CONVERSION ---
+    // Type conversion = converting a value of one data type to another
+    // Implicit = automatic
+    // Explicit = precede a value with a new data type
 
     int correct = 8;
     int questions = 10;
-    double score = correct/(double)questions * 100;
+    
+    // Explicit cast: converts 'questions' to double so we don't get integer division (0)
+    double score = correct / (double)questions * 100;
 
-    std::cout << score << "%";
+    std::cout << score << "%\n";
 
+
+    // --- SECTION 4: USER INPUT ---
     // cout << (insertion operator)
     // cin >> (extraction operator)
 
     std::string name;
     
-    std::cout << "Enter your name: ";
-    std::cin >> name;
+    std::cout << "Enter your name: \n";
+    std::cin >> name; // Reads until the first space
 
-    std::cout << "Hello" << name;
-    
+    std::cout << "Hello " << name << "\n"; 
 
     return 0;
 }
