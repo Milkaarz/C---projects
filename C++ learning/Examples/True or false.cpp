@@ -1,29 +1,40 @@
 #include <iostream>
-#include <string>
+
+// ternary operator ?: = replacement to an if/else statement
+// condition ? expression1 : expression2;
+
+//Example with If and Else
+//int main(){
+
+ //   int grade;
+
+  //  std::cout << "Enter you grade: ";
+  //  std::cin >> grade;  
+
+  //  if(grade >= 6){
+  //      std::cout << "You passed!!"; // first condition = condition for pass -> be higher than 6
+  //  }
+  //  else{
+ //       std::cout << "You failed!!";// second condition = condition for fail -> be lower than 6
+
+  //  }
+
+
+ //   return 0;
+
+//}
+
 
 int main(){
 
-    //if statements = do something if a condition is true
-    //                     if not, don't do it
+    int number = 2;
+    number % 2 == 1 ? std::cout << "ODD" : std::cout << "EVEN"; 
+    // in this case "?" represents IF and ":" represents ELSE
 
-    int age;
-    
-    std::cout << "Enter your age:";
-    std::cin >> age;
+    bool hungry = true;
+    hungry ? std::cout << "You are Hungry" : std::cout << "You are not Hungry";
+    // in this case "?" represents IF and ":" represents ELSE
 
-    if (age >= 100){
-        std::cout << "You are a century old!\n";
-    }
-    else if(age >= 18){
-        std::cout << "You are an adult!\n";
-    }
-    else if(age < 0){
-        std::cout << "You haven't been born yet!\n";
-    }
-    else {
-        std::cout << "You are not an adult!\n";
-    }
 
-    return 0;
-
+ return 0;
 }
