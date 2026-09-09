@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+
+int main(){
+
+    //do while loop = do some block of code first
+    //     THEN repeat again if contition is true
+
+    int number;
+    
+    do {
+        std::cout << "Enter a positive #: ";
+        std::cin >> number;
+    } while(number < 0);
+
+        std::cout << "The # number: " << number;
+
+    return 0;
+}
