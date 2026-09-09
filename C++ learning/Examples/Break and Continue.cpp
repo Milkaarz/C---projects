@@ -12,7 +12,7 @@ int main(){
     //        break;
     //    } 
         
-        // Skips the 13 in the sequence 
+        // Skips the 13 in the sequence
         for(int i = 1; i <= 20; i++){
         if(i == 13){
             continue;
