@@ -20,4 +20,4 @@ int main() {
 
 void printNum(int myNum) {
     std::cout << myNum << "\n";
-}
+}  
